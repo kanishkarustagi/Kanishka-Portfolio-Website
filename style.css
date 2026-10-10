@@ -385,3 +385,63 @@ section.experience .experience-card h3 {
         padding: 20px;
     }
 }
+/* ===== FINAL FIX FOR EXPERIENCE PAGE ===== */
+
+/* Keep ONE single white box around the internship details */
+body section.experience {
+    display: block !important;
+    width: 85% !important;
+    max-width: 1100px !important;
+    margin: 30px auto !important;
+    padding: 30px !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e2d2c0 !important;
+    border-left: 5px solid #795548 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 10px rgba(74, 52, 40, 0.10) !important;
+}
+
+/* REMOVE the short horizontal line below Data Science Intern */
+body section.experience > h2 {
+    border: none !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+
+    padding: 0 !important;
+    margin: 0 0 20px 0 !important;
+
+    color: #5d4037 !important;
+}
+
+/* REMOVE the inner box around the internship details */
+body section.experience div.experience-card {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+    border: none !important;
+    border-left: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Remove unwanted lines around headings inside the details */
+body section.experience .experience-card h3 {
+    border: none !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+/* Mobile screen adjustment */
+@media (max-width: 768px) {
+    body section.experience {
+        width: 95% !important;
+        padding: 20px !important;
+    }
+}
