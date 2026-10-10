@@ -513,3 +513,69 @@ body a[href*="linkedin.com/in/"]:hover,
 body a[href*="github.com/kanishkarustagi"]:hover {
     color: #FFFFFF !important;
 }
+
+/* ===== CONTACT PAGE ===== */
+
+.contact-card {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #FFFFFF;
+    color: #3E3028;
+    border: 1px solid #E2D2C0;
+    border-left: 5px solid #795548;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(74, 52, 40, 0.10);
+}
+
+.contact-card h2 {
+    color: #5D4037;
+    border: none;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    margin: 20px 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #E8DED2;
+    overflow-wrap: anywhere;
+}
+
+.contact-item:last-of-type {
+    border-bottom: none;
+}
+
+.contact-item strong {
+    display: block;
+    margin-bottom: 7px;
+    color: #5D4037;
+}
+
+.contact-item a {
+    color: #795548;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: #A87952;
+    text-decoration: underline;
+}
+
+/* Internship availability message */
+
+.contact-message {
+    margin-top: 25px;
+    color: #5D4037;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 768px) {
+    .contact-card {
+        margin: 25px 15px;
+        padding: 20px;
+    }
+}
