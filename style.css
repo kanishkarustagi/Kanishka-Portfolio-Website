@@ -339,3 +339,24 @@ a:hover {
     }
 
 }
+/* ==========================
+   EXPERIENCE SECTION
+========================== */
+
+.experience-card {
+    background: #F5EDE2;
+    border-left: 5px solid #795548;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.experience-card h3 {
+    color: #5D4037;
+    margin-bottom: 10px;
+}
+
+.experience-tech {
+    margin-top: 15px;
+    color: #4A3428;
+}
