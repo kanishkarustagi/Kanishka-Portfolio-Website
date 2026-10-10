@@ -2,285 +2,340 @@
    GENERAL STYLING
 ========================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background:#f4f7fb;
-    color:#333;
-    line-height:1.6;
+body {
+    background: #F5F0E8;
+    color: #3E3028;
+    line-height: 1.6;
 }
 
 /* ==========================
    HEADER
 ========================== */
 
+header {
+    background: #4A3428;
+    color: #FFF9F0;
+    text-align: center;
+    min-height: 300px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-header{
-    background:#0b3d91;
-    color:white;
-    text-align:center;
-    min-height:300px;
-    padding:40px 20px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #F5E6D3;
 }
-header h1{
-    font-size:40px;
-    margin-bottom:10px;
+
+header p {
+    margin: 6px 0;
+    font-size: 17px;
+    color: #F5E6D3;
 }
-header p{
-    margin:6px 0;
-    font-size:17px;
-}
-header a{
-    color: white;
+
+header a {
+    color: #FFF9F0;
     text-decoration: none;
     font-weight: bold;
 }
 
-header a:hover{
-    color: white;
+header a:hover {
+    color: #D8BFA5;
 }
 
 /* ==========================
    NAVIGATION
 ========================== */
 
-nav{
-    margin-top:25px;
+nav {
+    margin-top: 25px;
 }
 
-nav a{
-    display:inline-block;
-    text-decoration:none;
-    color:white;
-    background:#0b3d91;
-    padding:10px 20px;
-    margin:6px;
-    border-radius:5px;
-    transition:0.3s;
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF9F0;
+    background: #795548;
+    padding: 10px 20px;
+    margin: 6px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-nav a:hover{
-    background:white;
-    color:#0b3d91;
+nav a:hover {
+    background: #F5E6D3;
+    color: #4A3428;
 }
 
 /* ==========================
    SECTIONS
 ========================== */
 
-section{
-    width:85%;
-    margin:30px auto;
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+section {
+    width: 85%;
+    margin: 30px auto;
+    background: #FFFDF8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(74, 52, 40, 0.12);
 }
 
-section h2{
-    color:#0b3d91;
-    margin-bottom:15px;
-    border-bottom:2px solid #0b3d91;
-    padding-bottom:8px;
+section h2 {
+    color: #5D4037;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #BCA08A;
+    padding-bottom: 8px;
 }
 
-section p{
-    font-size:17px;
-    text-align:justify;
+section p {
+    font-size: 17px;
+    text-align: justify;
+    color: #3E3028;
 }
 
 /* ==========================
    LISTS
 ========================== */
 
-ul{
-    margin-left:25px;
-    margin-top:10px;
+ul {
+    margin-left: 25px;
+    margin-top: 10px;
 }
 
-li{
-    margin:10px 0;
+li {
+    margin: 10px 0;
 }
 
 /* ==========================
    BUTTON
 ========================== */
 
-.button{
-    display:inline-block;
-    text-decoration:none;
-    background:#0b3d91;
-    color:white;
-    padding:12px 24px;
-    border-radius:5px;
-    margin-top:20px;
-    transition:0.3s;
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background: #795548;
+    color: #FFFDF8;
+    padding: 12px 24px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s;
 }
 
-.button:hover{
-    background:#0b3d91;
+.button:hover {
+    background: #4A3428;
+    color: #FFFDF8;
 }
+
 /* ==========================
    FOOTER
 ========================== */
 
-footer{
-    background:#0b3d91;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
-    font-size:16px;
+footer {
+    background: #4A3428;
+    color: #F5E6D3;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 16px;
 }
 
 /* ==========================
-   TABLE (For Education)
+   TABLE (FOR EDUCATION)
 ========================== */
 
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:20px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-table, th, td{
-    border:1px solid #cccccc;
+table,
+th,
+td {
+    border: 1px solid #D8C8B5;
 }
 
-th{
-    background:#0b3d91;
-    color:white;
-    padding:12px;
+th {
+    background: #795548;
+    color: #FFFDF8;
+    padding: 12px;
 }
 
-td{
-    padding:12px;
-    text-align:center;
+td {
+    padding: 12px;
+    text-align: center;
+    color: #3E3028;
+    background: #FFFDF8;
 }
 
 /* ==========================
    PROJECT BOXES
 ========================== */
 
-.project{
-    background:#f8f9fc;
-    border-left:6px solid #0b3d91;
-    padding:20px;
-    margin-top:20px;
-    border-radius:8px;
+.project {
+    background: #F5EDE2;
+    border-left: 6px solid #795548;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
 }
 
-.project h3{
-    color:#0b3d91;
-    margin-bottom:10px;
+.project h3 {
+    color: #5D4037;
+    margin-bottom: 10px;
 }
 
-.project p{
-    margin-bottom:10px;
+.project p {
+    margin-bottom: 10px;
+}
+
+/* ==========================
+   PROJECT CARDS
+========================== */
+
+.project-card {
+    background: #F5EDE2;
+    border: 1px solid #E2D2C0;
+    border-left: 5px solid #795548;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    color: #5D4037;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-top: 12px;
 }
 
 /* ==========================
    SKILLS LIST
 ========================== */
 
-.skills-list{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-    margin-top:20px;
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.skills-list li{
-    list-style:none;
-    background:#0b3d91;
-    color:white;
-    padding:12px 18px;
-    border-radius:5px;
+.skills-list li {
+    list-style: none;
+    background: #795548;
+    color: #FFFDF8;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.skills-list li:hover {
+    background: #4A3428;
+    transform: translateY(-2px);
 }
 
 /* ==========================
    CERTIFICATE BOX
 ========================== */
 
-.certificate{
-    background:#f8f9fc;
-    border-left:5px solid #0b3d91;
-    padding:20px;
-    margin-top:20px;
-    border-radius:8px;
+.certificate {
+    background: #F5EDE2;
+    border-left: 5px solid #795548;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.certificate h3 {
+    color: #5D4037;
+}
+
+/* ==========================
+   LINKS
+========================== */
+
+a {
+    color: #795548;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #4A3428;
+}
+
+/* ==========================
+   CONTACT LINKS
+========================== */
+
+.contact-links a {
+    text-decoration: none;
+    color: #795548;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.contact-links a:hover {
+    color: #4A3428;
 }
 
 /* ==========================
    RESPONSIVE DESIGN
 ========================== */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-header h1{
-    font-size:30px;
-}
-
-header p{
-    font-size:15px;
-}
-
-nav a{
-    display:block;
-    margin:10px auto;
-    width:220px;
-}
-
-section{
-    width:95%;
-    padding:20px;
-}
-
-table{
-    font-size:14px;
-}
-
-.button{
-    width:100%;
-    text-align:center;
-}
-
-.skills-list{
-    flex-direction:column;
-}
-
-}
-.contact-links a {
-    text-decoration: none;
-    color: black;
-    margin-right: 20px;
-    font-size: 18px;
-}
-
-.contact-links a:hover {
-    color: black;
-}
-@media (max-width:768px){
-
-    header{
-        min-height:auto;
-        padding:30px 15px;
+    header {
+        min-height: auto;
+        padding: 30px 15px;
     }
 
-    header h1{
-        font-size:30px;
+    header h1 {
+        font-size: 30px;
     }
 
-    header p{
-        font-size:15px;
+    header p {
+        font-size: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px auto;
+        width: 220px;
+    }
+
+    section {
+        width: 95%;
+        padding: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills-list {
+        flex-direction: column;
+    }
+
+    .contact-links a {
+        display: inline-block;
+        margin-bottom: 10px;
     }
 
 }
