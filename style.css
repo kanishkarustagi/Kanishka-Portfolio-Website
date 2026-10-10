@@ -490,3 +490,26 @@ body a[href*="linkedin.com/in/"]:hover,
 body a[href*="github.com/kanishkarustagi"]:hover {
     color: #E8D5B7 !important;
 }
+
+/* Match navigation and profile links to the Kanishka heading colour */
+
+/* Navigation buttons */
+nav a,
+nav a:visited {
+    color: #F5E6D3 !important;
+}
+
+/* LinkedIn and GitHub profile links only */
+body a[href*="linkedin.com/in/"],
+body a[href*="github.com/kanishkarustagi"],
+body a[href*="linkedin.com/in/"]:visited,
+body a[href*="github.com/kanishkarustagi"]:visited {
+    color: #F5E6D3 !important;
+}
+
+/* Soft hover effect */
+nav a:hover,
+body a[href*="linkedin.com/in/"]:hover,
+body a[href*="github.com/kanishkarustagi"]:hover {
+    color: #FFFFFF !important;
+}
