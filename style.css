@@ -405,3 +405,50 @@ a:hover {
     background-color: #D7BFA8;
     color: #3E3028;
 }
+
+/* Common White Card Design for All Pages */
+
+.content-card {
+    background-color: #FFFFFF;
+    color: #3E3028;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 1050px;
+    border-radius: 10px;
+    border-left: 4px solid #795548;
+    box-shadow: 0 4px 14px rgba(74, 52, 40, 0.10);
+}
+
+/* Small Brown Badge */
+.section-badge {
+    display: inline-block;
+    background-color: #EFE3D5;
+    color: #5D4037;
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Card Headings */
+.content-card h1,
+.content-card h2,
+.content-card h3 {
+    color: #5D4037;
+    margin-top: 5px;
+}
+
+/* Card Paragraphs */
+.content-card p,
+.content-card li {
+    line-height: 1.8;
+}
+
+/* Mobile Design */
+@media (max-width: 600px) {
+    .content-card {
+        margin: 15px 10px;
+        padding: 18px;
+    }
+}
