@@ -360,3 +360,48 @@ a:hover {
     margin-top: 15px;
     color: #4A3428;
 }
+/* Inner Page Header Design */
+
+.inner-page-header {
+    background-color: #4A3428;
+    color: #FFF8EE;
+    text-align: center;
+    padding: 35px 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 1100px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.inner-page-header h1 {
+    color: #FFF8EE;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.inner-page-header p {
+    color: #E8D8C5;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.inner-page-header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.inner-page-header nav a {
+    color: #FFF8EE;
+    text-decoration: none;
+    background-color: #795548;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.inner-page-header nav a:hover {
+    background-color: #D7BFA8;
+    color: #3E3028;
+}
