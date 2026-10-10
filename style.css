@@ -1,7 +1,4 @@
-/* ==========================
-   GENERAL STYLING
-========================== */
-
+/* GENERAL STYLING */
 * {
     margin: 0;
     padding: 0;
@@ -15,11 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* ==========================
-   MAIN HEADER
-   HOME PAGE
-========================== */
-
+/* HOME PAGE HEADER */
 header {
     background: #4A3428;
     color: #FFF9F0;
@@ -44,22 +37,37 @@ header p {
     color: #F5E6D3;
 }
 
-header a {
+/* INNER PAGE HEADERS */
+.inner-page-header {
+    background: #4A3428;
     color: #FFF9F0;
-    text-decoration: none;
-    font-weight: bold;
+    text-align: center;
+    width: 85%;
+    max-width: 1100px;
+    padding: 30px 20px;
+    margin: 30px auto;
+    border-radius: 8px;
+    border-left: 5px solid #795548;
+    box-shadow: 0 4px 10px rgba(74, 52, 40, 0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header a:hover {
-    color: #D8BFA5;
+.inner-page-header h1 {
+    color: #F5E6D3;
+    font-size: 32px;
+    margin-bottom: 8px;
 }
 
-/* ==========================
-   NAVIGATION
-========================== */
+.inner-page-header p {
+    color: #F5E6D3;
+    font-size: 16px;
+}
 
+/* NAVIGATION */
 nav {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 nav a {
@@ -67,8 +75,8 @@ nav a {
     text-decoration: none;
     color: #FFF9F0;
     background: #795548;
-    padding: 10px 20px;
-    margin: 6px;
+    padding: 10px 18px;
+    margin: 5px;
     border-radius: 5px;
     transition: 0.3s;
 }
@@ -78,130 +86,61 @@ nav a:hover {
     color: #4A3428;
 }
 
-/* ==========================
-   INNER PAGE HEADERS
-   ABOUT, EDUCATION, EXPERIENCE,
-   SKILLS, PROJECTS, CERTIFICATIONS
-========================== */
-
-.inner-page-header {
-    background: #4A3428;
-    color: #FFF9F0;
-    text-align: center;
-    min-height: auto;
-    padding: 30px 20px;
-    margin: 20px auto;
-    max-width: 1100px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(74, 52, 40, 0.12);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.inner-page-header h1 {
-    font-size: 32px;
-    color: #F5E6D3;
-    margin-bottom: 8px;
-}
-
-.inner-page-header p {
-    color: #F5E6D3;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.inner-page-header nav {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-.inner-page-header nav a {
-    color: #FFF9F0;
-    background: #795548;
-    padding: 9px 16px;
-    margin: 4px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.inner-page-header nav a:hover {
-    background: #F5E6D3;
-    color: #4A3428;
-}
-
-/* ==========================
-   COMMON WHITE CONTENT CARDS
-   USE ON EVERY PAGE
-========================== */
-
-section {
+/* ALL PAGE CONTENT CARDS */
+section,
+.content-card,
+.experience-card,
+.project,
+.project-card,
+.certificate {
     width: 85%;
     max-width: 1100px;
     margin: 30px auto;
-    background: #FFFFFF;
     padding: 30px;
-    border-radius: 8px;
+    background: #FFFFFF;
+    color: #3E3028;
+    border: 1px solid #E2D2C0;
     border-left: 5px solid #795548;
+    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(74, 52, 40, 0.10);
 }
 
-section h2 {
+/* HEADINGS */
+section h1,
+section h2,
+section h3,
+.content-card h1,
+.content-card h2,
+.content-card h3,
+.experience-card h3,
+.project h3,
+.project-card h3,
+.certificate h3 {
     color: #5D4037;
     margin-bottom: 15px;
+}
+
+section h2,
+.content-card h2 {
     border-bottom: 2px solid #BCA08A;
     padding-bottom: 8px;
 }
 
-section h3 {
-    color: #5D4037;
-    margin-bottom: 10px;
-}
-
-section p {
-    font-size: 16px;
-    text-align: justify;
-    color: #3E3028;
-    margin-bottom: 10px;
-}
-
-/* ==========================
-   OPTIONAL CONTENT CARD
-========================== */
-
-.content-card {
-    width: 85%;
-    max-width: 1100px;
-    background: #FFFFFF;
-    color: #3E3028;
-    padding: 30px;
-    margin: 30px auto;
-    border-radius: 8px;
-    border-left: 5px solid #795548;
-    box-shadow: 0 4px 10px rgba(74, 52, 40, 0.10);
-}
-
-.content-card h1,
-.content-card h2,
-.content-card h3 {
-    color: #5D4037;
-    margin-bottom: 15px;
-}
-
+/* PARAGRAPHS */
+section p,
 .content-card p,
-.content-card li {
+.experience-card p,
+.project p,
+.project-card p,
+.certificate p {
+    color: #3E3028;
+    font-size: 16px;
     line-height: 1.8;
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
-/* ==========================
-   SECTION BADGES
-========================== */
-
+/* BADGES */
 .section-badge {
     display: inline-block;
     background: #EFE3D5;
@@ -213,65 +152,54 @@ section p {
     margin-bottom: 15px;
 }
 
-/* ==========================
-   LISTS
-========================== */
-
+/* LISTS */
 ul {
-    margin-left: 25px;
-    margin-top: 10px;
+    margin: 10px 0 0 25px;
 }
 
 li {
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
-/* ==========================
-   BUTTONS
-========================== */
+/* EXPERIENCE */
+.experience-tech {
+    margin-top: 15px;
+    color: #4A3428;
+}
 
-.button {
-    display: inline-block;
-    text-decoration: none;
-    background: #795548;
-    color: #FFFDF8;
-    padding: 12px 24px;
+/* SKILLS */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.skills-list li {
+    list-style: none;
+    background: #EFE3D5;
+    color: #5D4037;
+    border: 1px solid #E2D2C0;
+    border-left: 4px solid #795548;
+    padding: 10px 16px;
     border-radius: 5px;
-    margin-top: 20px;
     transition: 0.3s;
 }
 
-.button:hover {
-    background: #4A3428;
-    color: #FFFDF8;
+.skills-list li:hover {
+    background: #E8D8C5;
+    transform: translateY(-2px);
 }
 
-/* ==========================
-   FOOTER
-========================== */
-
-footer {
-    background: #4A3428;
-    color: #F5E6D3;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 16px;
-}
-
-/* ==========================
-   EDUCATION TABLE
-========================== */
-
+/* EDUCATION TABLE */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-table,
-th,
-td {
+table, th, td {
     border: 1px solid #D8C8B5;
 }
 
@@ -288,134 +216,27 @@ td {
     background: #FFFFFF;
 }
 
-/* ==========================
-   PROJECT BOXES
-========================== */
-
-.project {
-    background: #F5EDE2;
-    border-left: 5px solid #795548;
-    padding: 25px;
-    margin-top: 20px;
-    border-radius: 8px;
-}
-
-.project h3 {
-    color: #5D4037;
-    margin-bottom: 10px;
-}
-
-.project p {
-    margin-bottom: 10px;
-}
-
-/* ==========================
-   PROJECT CARDS
-========================== */
-
-.project-card {
-    background: #F5EDE2;
-    border: 1px solid #E2D2C0;
-    border-left: 5px solid #795548;
-    padding: 25px;
-    margin-top: 20px;
-    border-radius: 8px;
-}
-
-.project-card h3 {
-    color: #5D4037;
-    margin-bottom: 10px;
-}
-
-.project-card p {
-    margin-top: 12px;
-}
-
-/* ==========================
-   EXPERIENCE CARDS
-   REFERENCE DESIGN
-========================== */
-
-.experience-card {
-    background: #F5EDE2;
-    border-left: 5px solid #795548;
-    padding: 25px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(74, 52, 40, 0.06);
-}
-
-.experience-card h3 {
-    color: #5D4037;
-    margin-bottom: 10px;
-}
-
-.experience-tech {
-    margin-top: 15px;
-    color: #4A3428;
-}
-
-/* ==========================
-   SKILLS LIST
-========================== */
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 20px;
-    margin-left: 0;
-}
-
-.skills-list li {
-    list-style: none;
-    background: #F5EDE2;
-    color: #5D4037;
-    border-left: 4px solid #795548;
-    padding: 10px 16px;
+/* BUTTONS */
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background: #795548;
+    color: #FFFDF8;
+    padding: 12px 24px;
     border-radius: 5px;
-    transition: 0.3s;
-}
-
-.skills-list li:hover {
-    background: #E8D8C5;
-    transform: translateY(-2px);
-}
-
-/* ==========================
-   CERTIFICATE CARDS
-========================== */
-
-.certificate {
-    background: #F5EDE2;
-    border-left: 5px solid #795548;
-    padding: 25px;
     margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(74, 52, 40, 0.06);
-}
-
-.certificate h3 {
-    color: #5D4037;
-    margin-bottom: 10px;
-}
-
-/* ==========================
-   LINKS
-========================== */
-
-a {
-    color: #795548;
     transition: 0.3s;
 }
 
-a:hover {
-    color: #4A3428;
+.button:hover {
+    background: #4A3428;
+    color: #FFFFFF;
 }
 
-/* ==========================
-   CONTACT LINKS
-========================== */
+/* LINKS */
+a {
+    transition: 0.3s;
+}
 
 .contact-links a {
     text-decoration: none;
@@ -428,12 +249,18 @@ a:hover {
     color: #4A3428;
 }
 
-/* ==========================
-   RESPONSIVE DESIGN
-========================== */
+/* FOOTER */
+footer {
+    background: #4A3428;
+    color: #F5E6D3;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 16px;
+}
 
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
-
     header {
         min-height: auto;
         padding: 30px 15px;
@@ -443,14 +270,16 @@ a:hover {
         font-size: 30px;
     }
 
-    header p {
-        font-size: 15px;
-    }
-
-    .inner-page-header {
+    .inner-page-header,
+    section,
+    .content-card,
+    .experience-card,
+    .project,
+    .project-card,
+    .certificate {
         width: 95%;
-        padding: 25px 15px;
-        margin: 15px auto;
+        padding: 20px;
+        margin: 20px auto;
     }
 
     .inner-page-header h1 {
@@ -458,6 +287,7 @@ a:hover {
     }
 
     .inner-page-header nav {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -467,32 +297,16 @@ a:hover {
         text-align: center;
     }
 
-    section,
-    .content-card {
-        width: 95%;
-        padding: 20px;
-        margin: 20px auto;
+    .skills-list {
+        flex-direction: row;
     }
 
     table {
         font-size: 14px;
     }
 
-    th,
-    td {
+    th, td {
         padding: 8px;
-    }
-
-    .button {
-        text-align: center;
-    }
-
-    .skills-list {
-        flex-direction: row;
-    }
-
-    .skills-list li {
-        max-width: 100%;
     }
 
     .contact-links a {
@@ -501,12 +315,7 @@ a:hover {
     }
 }
 
-/* ==========================
-   SMALL MOBILE SCREENS
-========================== */
-
 @media (max-width: 480px) {
-
     .inner-page-header h1 {
         font-size: 24px;
     }
@@ -517,14 +326,11 @@ a:hover {
     }
 
     section,
-    .content-card {
-        padding: 16px;
-    }
-
+    .content-card,
     .experience-card,
     .project,
     .project-card,
     .certificate {
-        padding: 18px;
+        padding: 16px;
     }
 }
