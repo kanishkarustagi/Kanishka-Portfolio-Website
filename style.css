@@ -579,3 +579,58 @@ body a[href*="github.com/kanishkarustagi"]:hover {
         padding: 20px;
     }
 }
+
+/* ===== PORTFOLIO VISIBILITY FIXES ===== */
+
+/* 1. LinkedIn and GitHub links: darker on white backgrounds */
+.contact-item a,
+body a[href*="linkedin.com/in/"],
+body a[href*="github.com/kanishkarustagi"] {
+    color: #795548 !important;
+}
+
+.contact-item a:hover,
+body a[href*="linkedin.com/in/"]:hover,
+body a[href*="github.com/kanishkarustagi"]:hover {
+    color: #A87952 !important;
+}
+
+/* 2. Navigation buttons: light text on dark brown background */
+nav a,
+nav a:visited {
+    color: #F5E6D3 !important;
+}
+
+nav a:hover {
+    color: #FFFFFF !important;
+}
+
+/* 3. View Resume button */
+a[href*="resume"],
+a[href*="Resume"],
+button {
+    color: #FFF3E0;
+}
+
+/* 4. View Certificate links and buttons */
+a[href*="certificate"],
+a[href*="Certificate"],
+a[href$=".pdf"] {
+    color: #FFF3E0;
+}
+
+/* 5. Ensure button text remains readable on brown backgrounds */
+.btn,
+.button,
+.resume-btn,
+.certificate-btn {
+    color: #FFF3E0 !important;
+}
+
+/* 6. Hover effect for resume and certificate links */
+.btn:hover,
+.button:hover,
+.resume-btn:hover,
+.certificate-btn:hover {
+    color: #FFFFFF !important;
+}
