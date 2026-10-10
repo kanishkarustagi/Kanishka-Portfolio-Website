@@ -445,33 +445,3 @@ body section.experience .experience-card h3 {
         padding: 20px !important;
     }
 }
-
-/* Make all links clearly visible */
-a {
-    color: #A87952;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-/* Colour when hovering over a link */
-a:hover {
-    color: #D2A679;
-    text-decoration: underline;
-}
-
-/* LinkedIn and GitHub profile links */
-.social-links a,
-.profile-links a {
-    color: #A87952 !important;
-}
-
-/* Links after they have been visited */
-a:visited {
-    color: #A87952;
-}
-
-/* Hover effect for profile links */
-.social-links a:hover,
-.profile-links a:hover {
-    color: #D2A679 !important;
-}
