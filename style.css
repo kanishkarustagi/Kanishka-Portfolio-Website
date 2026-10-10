@@ -634,3 +634,224 @@ a[href$=".pdf"] {
 .certificate-btn:hover {
     color: #FFFFFF !important;
 }
+/* ==========================================
+   HOMEPAGE DESIGN — CREAM & BROWN THEME
+   Add this at the bottom of style.css
+   ========================================== */
+
+body.home-page {
+    background-color: #f7f2e9;
+    color: #30271f;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+.home-page *,
+.home-page *::before,
+.home-page *::after {
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.home-page .site-header {
+    background-color: #f7f2e9;
+    border-bottom: 1px solid #e4d8c9;
+    padding: 30px 0;
+}
+
+.home-page .site-header .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.home-page .site-title h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(32px, 5vw, 48px);
+    color: #674735;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.home-page .site-title p {
+    color: #786b60;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/* NAVIGATION */
+
+.home-page .main-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+}
+
+.home-page .main-navigation a {
+    display: inline-block;
+    text-decoration: none;
+    color: #674735;
+    background: #fffdf8;
+    border: 1px solid #e4d8c9;
+    border-radius: 30px;
+    padding: 9px 16px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: background 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.home-page .main-navigation a:hover,
+.home-page .main-navigation a:focus-visible {
+    background: #674735;
+    border-color: #674735;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.home-page .main-navigation a.active {
+    background: #674735;
+    border-color: #674735;
+    color: #ffffff;
+}
+
+/* MAIN CONTENT */
+
+.home-page main.container {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+/* ABOUT ME CARD */
+
+.home-page .about-section {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #fffdf8;
+    border: 1px solid #e4d8c9;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(65, 45, 29, 0.06);
+}
+
+.home-page .about-section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(32px, 4vw, 42px);
+    color: #30271f;
+    margin: 0 0 25px;
+    line-height: 1.2;
+}
+
+/* ABOUT ME LIST */
+
+.home-page .about-list {
+    padding-left: 25px;
+    margin: 0;
+}
+
+.home-page .about-list li {
+    color: #786b60;
+    font-size: 14px;
+    line-height: 1.9;
+    padding: 15px 0 15px 5px;
+    border-bottom: 1px solid #eee6dc;
+}
+
+.home-page .about-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.home-page .about-list li::marker {
+    color: #674735;
+}
+
+.home-page .about-list strong {
+    color: #674735;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+.home-page .site-footer {
+    padding: 22px 0;
+    background: #f7f2e9;
+    border-top: 1px solid #e4d8c9;
+    color: #786b60;
+    font-size: 12px;
+    text-align: center;
+}
+
+.home-page .site-footer p {
+    margin: 0;
+}
+
+/* TABLET RESPONSIVENESS */
+
+@media (max-width: 768px) {
+    .home-page .site-header {
+        padding: 25px 0;
+    }
+
+    .home-page .site-header .container {
+        gap: 20px;
+    }
+
+    .home-page main.container {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .home-page .about-section {
+        padding: 28px;
+    }
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 480px) {
+    .home-page .container {
+        width: 92%;
+    }
+
+    .home-page .site-title h1 {
+        font-size: 32px;
+    }
+
+    .home-page .site-title p {
+        font-size: 13px;
+    }
+
+    .home-page .main-navigation {
+        gap: 7px;
+    }
+
+    .home-page .main-navigation a {
+        padding: 8px 11px;
+        font-size: 11px;
+    }
+
+    .home-page .about-section {
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+
+    .home-page .about-section h2 {
+        font-size: 31px;
+        margin-bottom: 18px;
+    }
+
+    .home-page .about-list {
+        padding-left: 21px;
+    }
+
+    .home-page .about-list li {
+        font-size: 13px;
+        padding: 12px 0 12px 3px;
+    }
+}
